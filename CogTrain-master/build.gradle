@@ -76,6 +76,21 @@ project(":android") {
     }
 }
 
+project(":ios") {
+    apply plugin: "java-library"
+    apply plugin: "robovm"
+
+
+    dependencies {
+        implementation project(":core")
+        api "com.mobidevelop.robovm:robovm-rt:$roboVMVersion"
+        api "com.mobidevelop.robovm:robovm-cocoatouch:$roboVMVersion"
+        api "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
+        api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
+
+    }
+}
+
 project(":html") {
     apply plugin: "java-library"
     apply plugin: "gwt"
@@ -109,6 +124,7 @@ project(":core") {
 
     }
 }
+
 
 tasks.eclipse.doLast {
     delete ".project"

@@ -1,6 +1,5 @@
 sourceSets.main.java.srcDirs = [ "src/" ]
 
-
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 ext {
