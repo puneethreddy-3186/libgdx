@@ -10,7 +10,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
  */
 
 public class WindowAssetManager {
-	private Sprite windowLightOffSprite = new Sprite(new Texture(Gdx.files.internal("window_light_off.png")));
+		private Sprite windowLightOffSprite = new Sprite(new Texture(Gdx.files.internal("window_light_off.png")));
 	private Sprite windowLightOnSprite = new Sprite(new Texture(Gdx.files.internal("window_light_on.png")));
 
 
